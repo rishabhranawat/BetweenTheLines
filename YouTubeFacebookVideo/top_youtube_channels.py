@@ -8,7 +8,8 @@ import requests, json
 
 
 # Source of the top youtube channels - vistatsx.com
-url = "http://vidstatsx.com/youtube-top-100-most-subscribed-channels"
+# url = "http://vidstatsx.com/youtube-top-100-most-subscribed-channels"
+url = "http://vidstatsx.com/youtube-top-200-most-subscribed-channels"
 req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
 page = html.fromstring(urlopen(req).read())
 el = page.xpath("//a[@class='user']")
@@ -21,7 +22,7 @@ for each in el:
 print(json.dumps(vals, indent=4))
 
 with open('youtube_channels.json', 'w') as fp:
-	json.dump(vals, fp)
+	fp.write(json.dumps(vals, indent=4))
 
 # for key, val in vals.items():
 # 	url = "https://www.googleapis.com/youtube/v3/channels?part=contentDetails&forUsername="+val.replace("/", "")+"&key=AIzaSyBxuVNgsVOm3GVeIsyrYK1KvyKyWFXY2q8"
