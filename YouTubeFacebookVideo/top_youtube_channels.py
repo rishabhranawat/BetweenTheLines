@@ -19,6 +19,7 @@ for each in el:
 	if(each.text[0] != "#"):
 		vals[each.text] = each.attrib["href"].replace("/youtube-channel", "")
 
+print(json.dumps(vals, indent=4))
 for key, val in vals.items():
 	url = "https://www.googleapis.com/youtube/v3/channels?part=contentDetails&forUsername="+val.replace("/", "")+"&key=AIzaSyBxuVNgsVOm3GVeIsyrYK1KvyKyWFXY2q8"
 	channel_data = json.loads(requests.get(url).text)
@@ -35,4 +36,3 @@ for key, val in vals.items():
 		print("likeCount "+details['items'][0]['statistics']['likeCount'])
 		print("viewCount "+details['items'][0]['statistics']['viewCount'])
 		print()
-
