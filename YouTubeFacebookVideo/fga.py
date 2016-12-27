@@ -4,7 +4,7 @@ import requests, json
 from urllib.request import Request, urlopen
 import facebook
 
-class fga():
+class FacebookGoogleAggregator():
 	# API DETAILS
 	APP_ID = "1254942267860327"
 	API_KEY = "b41369a7ec1e753a7274e752afc8b9a4"
@@ -14,7 +14,7 @@ class fga():
 			if(each['is_verified']):
 				return each['id']
 
-	def get_youtube_detail(self):
+	def getYouTubeDetails(self):
 		
 		# Source of the top youtube channels - vistatsx.com
 		# url = "http://vidstatsx.com/youtube-top-100-most-subscribed-channels"
@@ -29,7 +29,7 @@ class fga():
 				youtube_channel_details[each.text] = each.attrib["href"].replace("/youtube-channel", "")
 		return youtube_channel_details
 
-	def get_facebook_youtube_from_youtube(self, youtube_channel_details):
+	def getFacebookFromTopYouTubeChannels(self, youtube_channel_details):
 		
 		# Get Authentication access to facebook's graph API
 		url = "https://graph.facebook.com/oauth/access_token?grant_type=client_credentials&read_insights&client_id="+self.APP_ID+"&client_secret="+self.API_KEY
@@ -48,13 +48,13 @@ class fga():
 		
 		return all_channels_details
 
-	def get_first_level_data(self):
-		youtube_channel_details = self.get_youtube_detail()
-		print(self.get_facebook_youtube_from_youtube(youtube_channel_details))
+	def getFirstLevelData(self):
+		youtube_channel_details = self.getYouTubeDetails()
+		print(self.getFacebookFromTopYouTubeChannels(youtube_channel_details))
 
 
-a = fga()
-a.get_first_level_data()
+a = FacebookGoogleAggregator()
+a.getFirstLevelData()
 
 
 
