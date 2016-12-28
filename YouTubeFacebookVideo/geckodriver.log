@@ -1,0 +1,308 @@
+1482870468409	geckodriver	INFO	Listening on 127.0.0.1:54381
+1482870469302	mozprofile::profile	INFO	Using profile path /var/folders/f_/8pmnbd_97gq3pwggbf8sv78h0000gn/T/rust_mozprofile.YYO5ry4EZpxX
+1482870469304	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1482870469329	geckodriver::marionette	INFO	Connecting to Marionette on localhost:54390
+1482870784050	geckodriver	INFO	Listening on 127.0.0.1:54570
+1482870785003	mozprofile::profile	INFO	Using profile path /var/folders/f_/8pmnbd_97gq3pwggbf8sv78h0000gn/T/rust_mozprofile.sZFDNOyZwT9n
+1482870785004	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1482870785008	geckodriver::marionette	INFO	Connecting to Marionette on localhost:54579
+1482870998551	geckodriver	INFO	Listening on 127.0.0.1:54735
+1482870999494	mozprofile::profile	INFO	Using profile path /var/folders/f_/8pmnbd_97gq3pwggbf8sv78h0000gn/T/rust_mozprofile.W38WbAGbesbo
+1482870999495	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1482870999512	geckodriver::marionette	INFO	Connecting to Marionette on localhost:54744
+1482871000028	Marionette	INFO	Listening on port 54744
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4A00C2,name=PContent::Msg_ConsoleMessage) Channel closing: too late to send/recv, messages will be lost
+
+1482871147409	geckodriver	INFO	Listening on 127.0.0.1:54833
+1482871148369	mozprofile::profile	INFO	Using profile path /var/folders/f_/8pmnbd_97gq3pwggbf8sv78h0000gn/T/rust_mozprofile.zeSEdwwhx4PQ
+1482871148371	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1482871148375	geckodriver::marionette	INFO	Connecting to Marionette on localhost:54842
+1482871148869	Marionette	INFO	Listening on port 54842
+1482871179169	geckodriver	INFO	Listening on 127.0.0.1:54868
+1482871180123	mozprofile::profile	INFO	Using profile path /var/folders/f_/8pmnbd_97gq3pwggbf8sv78h0000gn/T/rust_mozprofile.MI05r9cOf8lI
+1482871180125	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1482871180129	geckodriver::marionette	INFO	Connecting to Marionette on localhost:54877
+1482871180651	Marionette	INFO	Listening on port 54877
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yM/r/JqjF3Fmc17w.js, line 4: unreachable code after return statement
+JavaScript error: https://www.facebook.com/rsrc.php/v3/ys/r/MF5p898w3SZ.js, line 159: Error: Request aborted.
+JavaScript error: https://www.facebook.com/rsrc.php/v3/ys/r/MF5p898w3SZ.js, line 159: Error: Request aborted.
+JavaScript error: https://www.facebook.com/rsrc.php/v3/ys/r/MF5p898w3SZ.js, line 81: Error: Player destroyed
+JavaScript error: http://winterbash2016.stackexchange.com/api/current-hats?callback=winterBashCurrentHats22429036&userids=929999%3B1099682%3B1401686%3B2631276%3B3274172%3B3497814%3B4714742%3B4879665&host=stackoverflow.com&_=1482871258531, line 1: ReferenceError: winterBashCurrentHats22429036 is not defined
+2016-12-28 02:15:05.565 firefox-bin[4347:12046211] -deltaZ is deprecated for NSEventTypeMagnify.  Please use -magnification.
+Dec 28 02:15:58  firefox-bin[4347] <Error>: CGContextSetFillColorWithColor: invalid context 0x0. If you want to see the backtrace, please set CG_CONTEXT_SHOW_BACKTRACE environmental variable.
+Dec 28 02:15:58  firefox-bin[4347] <Error>: CGContextSetStrokeColorWithColor: invalid context 0x0. If you want to see the backtrace, please set CG_CONTEXT_SHOW_BACKTRACE environmental variable.
+Dec 28 02:15:58  firefox-bin[4347] <Error>: CGContextGetCompositeOperation: invalid context 0x0. If you want to see the backtrace, please set CG_CONTEXT_SHOW_BACKTRACE environmental variable.
+Dec 28 02:15:58  firefox-bin[4347] <Error>: CGContextSetCompositeOperation: invalid context 0x0. If you want to see the backtrace, please set CG_CONTEXT_SHOW_BACKTRACE environmental variable.
+Dec 28 02:15:58  firefox-bin[4347] <Error>: CGContextFillRects: invalid context 0x0. If you want to see the backtrace, please set CG_CONTEXT_SHOW_BACKTRACE environmental variable.
+Dec 28 02:15:58  firefox-bin[4347] <Error>: CGContextSetCompositeOperation: invalid context 0x0. If you want to see the backtrace, please set CG_CONTEXT_SHOW_BACKTRACE environmental variable.
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/inspector/breadcrumbs.js, line 486: TypeError: this.handleMouseLeave is not a function
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/inspector/breadcrumbs.js, line 486: TypeError: this.handleMouseLeave is not a function
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/inspector/breadcrumbs.js, line 486: TypeError: this.handleMouseLeave is not a function
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 263: TypeError: this.controller is undefined
+JavaScript error: http://winterbash2016.stackexchange.com/api/current-hats?callback=winterBashCurrentHats11536895&userids=779412%3B1912128%3B4293747%3B4551608&host=stackoverflow.com&_=1482871731563, line 1: ReferenceError: winterBashCurrentHats11536895 is not defined
+JavaScript error: http://winterbash2016.stackexchange.com/api/current-hats?callback=winterBashCurrentHats1369358&userids=578663%3B790695&host=stackoverflow.com&_=1482872306398, line 1: ReferenceError: winterBashCurrentHats1369358 is not defined
+JavaScript error: http://winterbash2016.stackexchange.com/api/current-hats?callback=winterBashCurrentHats402966&userids=3340%3B14343%3B20862%3B23897%3B68998%3B271526&host=stackoverflow.com&_=1482872321637, line 1: ReferenceError: winterBashCurrentHats402966 is not defined
+JavaScript error: http://winterbash2016.stackexchange.com/api/current-hats?callback=winterBashCurrentHats2746042&userids=4279%3B503901%3B1104941%3B1132921&host=stackoverflow.com&_=1482872336308, line 1: ReferenceError: winterBashCurrentHats2746042 is not defined
+1482956416964	geckodriver	INFO	Listening on 127.0.0.1:57906
+1482956417908	mozprofile::profile	INFO	Using profile path /var/folders/f_/8pmnbd_97gq3pwggbf8sv78h0000gn/T/rust_mozprofile.TgtovROvKTvp
+1482956417910	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1482956417912	geckodriver::marionette	INFO	Connecting to Marionette on localhost:57915
+1482956418546	Marionette	INFO	Listening on port 57915
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/inspector/breadcrumbs.js, line 486: TypeError: this.handleMouseLeave is not a function
+1482956931304	geckodriver	INFO	Listening on 127.0.0.1:58201
+1482956932254	mozprofile::profile	INFO	Using profile path /var/folders/f_/8pmnbd_97gq3pwggbf8sv78h0000gn/T/rust_mozprofile.EL2NRT5vbyDq
+1482956932255	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1482956932259	geckodriver::marionette	INFO	Connecting to Marionette on localhost:58210
+1482956932723	Marionette	INFO	Listening on port 58210
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 77: TypeError: this._recipeManager is null
+console.warn: nsLoginManager: searchLogins: `formSubmitURL` or `httpRealm` is recommended
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 77: TypeError: this._recipeManager is null
+console.warn: nsLoginManager: searchLogins: `formSubmitURL` or `httpRealm` is recommended
+1482957527672	geckodriver	INFO	Listening on 127.0.0.1:58380
+1482957528621	mozprofile::profile	INFO	Using profile path /var/folders/f_/8pmnbd_97gq3pwggbf8sv78h0000gn/T/rust_mozprofile.4OEQCSr7nBu8
+1482957528623	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1482957528627	geckodriver::marionette	INFO	Connecting to Marionette on localhost:58389
+1482957529121	Marionette	INFO	Listening on port 58389
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/inspector/breadcrumbs.js, line 486: TypeError: this.handleMouseLeave is not a function
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 77: TypeError: this._recipeManager is null
+console.warn: nsLoginManager: searchLogins: `formSubmitURL` or `httpRealm` is recommended
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 77: TypeError: this._recipeManager is null
+console.warn: nsLoginManager: searchLogins: `formSubmitURL` or `httpRealm` is recommended
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+console.error: 
+DOMException
+  - prototype DOMException
+    - ABORT_ERR = 20
+    - DATA_CLONE_ERR = 25
+    - DOMSTRING_SIZE_ERR = 2
+    - HIERARCHY_REQUEST_ERR = 3
+    - INDEX_SIZE_ERR = 1
+    - INUSE_ATTRIBUTE_ERR = 10
+    - INVALID_ACCESS_ERR = 15
+    - INVALID_CHARACTER_ERR = 5
+    - INVALID_MODIFICATION_ERR = 13
+    - INVALID_NODE_TYPE_ERR = 24
+    - INVALID_STATE_ERR = 11
+    - NAMESPACE_ERR = 14
+    - NETWORK_ERR = 19
+    - NOT_FOUND_ERR = 8
+    - NOT_SUPPORTED_ERR = 9
+    - NO_DATA_ALLOWED_ERR = 6
+    - NO_MODIFICATION_ALLOWED_ERR = 7
+    - QUOTA_EXCEEDED_ERR = 22
+    - SECURITY_ERR = 18
+    - SYNTAX_ERR = 12
+    - TIMEOUT_ERR = 23
+    - TYPE_MISMATCH_ERR = 17
+    - URL_MISMATCH_ERR = 21
+    - VALIDATION_ERR = 16
+    - WRONG_DOCUMENT_ERR = 4
+    - code = 15
+    - columnNumber = 0
+    - data = null
+    - filename = resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js
+    - lineNumber = 913
+    - location = {"name":"get ruleCount","language":2,"languageName":"JavaScript","filename":"resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js","lineNumber":913,"columnNumber":1,"sourceLine":"","asyncCause":null,"asyncCaller":null,"caller":{"language":2,"languageName":"JavaScript","filename":"resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js","name":"CssLogic.prototype.getSheet","lineNumber":347,"columnNumber":9,"sourceLine":"","asyncCause":null,"asyncCaller":null,"caller":{"language":2,"languageName":"JavaScript","filename":"resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js","name":"CssLogic.prototype._cacheSheet","lineNumber":254,"columnNumber":20,"sourceLine":"","asyncCause":null,"asyncCaller":null,"caller":{"language":2,"languageName":"JavaScript","filename":"resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js","name":"CssLogic.prototype._cacheSheets","lineNumber":228,"columnNumber":5,"sourceLine":"","asyncCause":null,"asyncCaller":null,"caller":{"language":2,"languageName":"JavaScript","filename":"resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js","name":"CssLogic.prototype.highlight","lineNumber":130,"columnNumber":7,"sourceLine":"","asyncCause":null,"asyncCaller":null,"caller":{"language":2,"languageName":"JavaScript","filename":"resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/styles.js","name":"PageStyleActor<.getApplied<","lineNumber":447,"columnNumber":5,"sourceLine":"","asyncCause":null,"asyncCaller":null,"caller":{"language":2,"languageName":"JavaScript","filename":"resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js","name":"TaskImpl.prototype._run","lineNumber":311,"columnNumber":39,"sourceLine":"","asyncCause":null,"asyncCaller":null,"caller":{"language":2,"languageName":"JavaScript","filename":"resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js","name":"TaskImpl","lineNumber":273,"columnNumber":3,"sourceLine":"","asyncCause":null,"asyncCaller":null,"caller":{"language":2,"languageName":"JavaScript","filename":"resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js","name":"createAsyncFunction/asyncFunction","lineNumber":247,"columnNumber":14,"sourceLine":"","asyncCause":null,"asyncCaller":null,"caller":{"language":2,"languageName":"JavaScript","filename":"resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js","name":"generateRequestHandlers/</handler","lineNumber":1044,"columnNumber":19,"sourceLine":"","asyncCause":null,"asyncCaller":null,"caller":{"language":2,"languageName":"JavaScript","filename":"resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/main.js","name":"onPacket","lineNumber":1707,"columnNumber":15,"sourceLine":"","asyncCause":null,"asyncCaller":null,"caller":{"language":2,"languageName":"JavaScript","filename":"resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/transport/transport.js","name":"ChildDebuggerTransport.prototype.receiveMessage","lineNumber":752,"columnNumber":7,"sourceLine":"","asyncCause":null,"asyncCaller":null,"caller":null,"formattedStack":"ChildDebuggerTransport.prototype.receiveMessage@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/transport/transport.js:752:7\n","nativeSavedFrame":{}},"formattedStack":"onPacket@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/main.js:1707:15\nChildDebuggerTransport.prototype.receiveMessage@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/transport/transport.js:752:7\n","nativeSavedFrame":{}},"formattedStack":"generateRequestHandlers/</handler@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:1044:19\nonPacket@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/main.js:1707:15\nChildDebuggerTransport.prototype.receiveMessage@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/transport/transport.js:752:7\n","nativeSavedFrame":{}},"formattedStack":"createAsyncFunction/asyncFunction@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:247:14\ngenerateRequestHandlers/</handler@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:1044:19\nonPacket@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/main.js:1707:15\nChildDebuggerTransport.prototype.receiveMessage@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/transport/transport.js:752:7\n","nativeSavedFrame":{}},"formattedStack":"TaskImpl@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:273:3\ncreateAsyncFunction/asyncFunction@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:247:14\ngenerateRequestHandlers/</handler@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:1044:19\nonPacket@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/main.js:1707:15\nChildDebuggerTransport.prototype.receiveMessage@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/transport/transport.js:752:7\n","nativeSavedFrame":{}},"formattedStack":"TaskImpl.prototype._run@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:311:39\nTaskImpl@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:273:3\ncreateAsyncFunction/asyncFunction@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:247:14\ngenerateRequestHandlers/</handler@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:1044:19\nonPacket@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/main.js:1707:15\nChildDebuggerTransport.prototype.receiveMessage@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/transport/transport.js:752:7\n","nativeSavedFrame":{}},"formattedStack":"PageStyleActor<.getApplied<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/styles.js:447:5\nTaskImpl.prototype._run@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:311:39\nTaskImpl@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:273:3\ncreateAsyncFunction/asyncFunction@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:247:14\ngenerateRequestHandlers/</handler@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:1044:19\nonPacket@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/main.js:1707:15\nChildDebuggerTransport.prototype.receiveMessage@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/transport/transport.js:752:7\n","nativeSavedFrame":{}},"formattedStack":"CssLogic.prototype.highlight@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js:130:7\nPageStyleActor<.getApplied<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/styles.js:447:5\nTaskImpl.prototype._run@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:311:39\nTaskImpl@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:273:3\ncreateAsyncFunction/asyncFunction@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:247:14\ngenerateRequestHandlers/</handler@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:1044:19\nonPacket@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/main.js:1707:15\nChildDebuggerTransport.prototype.receiveMessage@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/transport/transport.js:752:7\n","nativeSavedFrame":{}},"formattedStack":"CssLogic.prototype._cacheSheets@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js:228:5\nCssLogic.prototype.highlight@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js:130:7\nPageStyleActor<.getApplied<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/styles.js:447:5\nTaskImpl.prototype._run@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:311:39\nTaskImpl@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:273:3\ncreateAsyncFunction/asyncFunction@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:247:14\ngenerateRequestHandlers/</handler@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:1044:19\nonPacket@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/main.js:1707:15\nChildDebuggerTransport.prototype.receiveMessage@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/transport/transport.js:752:7\n","nativeSavedFrame":{}},"formattedStack":"CssLogic.prototype._cacheSheet@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js:254:20\nCssLogic.prototype._cacheSheets@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js:228:5\nCssLogic.prototype.highlight@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js:130:7\nPageStyleActor<.getApplied<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/styles.js:447:5\nTaskImpl.prototype._run@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:311:39\nTaskImpl@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:273:3\ncreateAsyncFunction/asyncFunction@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:247:14\ngenerateRequestHandlers/</handler@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:1044:19\nonPacket@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/main.js:1707:15\nChildDebuggerTransport.prototype.receiveMessage@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/transport/transport.js:752:7\n","nativeSavedFrame":{}},"formattedStack":"CssLogic.prototype.getSheet@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js:347:9\nCssLogic.prototype._cacheSheet@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js:254:20\nCssLogic.prototype._cacheSheets@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js:228:5\nCssLogic.prototype.highlight@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js:130:7\nPageStyleActor<.getApplied<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/styles.js:447:5\nTaskImpl.prototype._run@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:311:39\nTaskImpl@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:273:3\ncreateAsyncFunction/asyncFunction@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:247:14\ngenerateRequestHandlers/</handler@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:1044:19\nonPacket@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/main.js:1707:15\nChildDebuggerTransport.prototype.receiveMessage@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/transport/transport.js:752:7\n","nativeSavedFrame":{}},"formattedStack":"get ruleCount@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js:913:1\nCssLogic.prototype.getSheet@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js:347:9\nCssLogic.prototype._cacheSheet@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js:254:20\nCssLogic.prototype._cacheSheets@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js:228:5\nCssLogic.prototype.highlight@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js:130:7\nPageStyleActor<.getApplied<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/styles.js:447:5\nTaskImpl.prototype._run@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:311:39\nTaskImpl@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:273:3\ncreateAsyncFunction/asyncFunction@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:247:14\ngenerateRequestHandlers/</handler@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:1044:19\nonPacket@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/main.js:1707:15\nChildDebuggerTransport.prototype.receiveMessage@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/transport/transport.js:752:7\n","nativeSavedFrame":{}}
+    - message = A parameter or an operation is not supported by the underlying object
+    - name = InvalidAccessError
+    - result = 2152923151
+    - stack = get ruleCount@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js:913:1|CssLogic.prototype.getSheet@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js:347:9|CssLogic.prototype._cacheSheet@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js:254:20|CssLogic.prototype._cacheSheets@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js:228:5|CssLogic.prototype.highlight@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js:130:7|PageStyleActor<.getApplied<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/styles.js:447:5|TaskImpl.prototype._run@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:311:39|TaskImpl@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:273:3|createAsyncFunction/asyncFunction@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:247:14|generateRequestHandlers/</handler@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:1044:19|onPacket@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/main.js:1707:15|ChildDebuggerTransport.prototype.receiveMessage@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/transport/transport.js:752:7|
+  - prototype Error
+  - prototype Object
+get ruleCount@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js:913:1
+CssLogic.prototype.getSheet@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js:347:9
+CssLogic.prototype._cacheSheet@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js:254:20
+CssLogic.prototype._cacheSheets@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js:228:5
+CssLogic.prototype.highlight@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/css-logic.js:130:7
+PageStyleActor<.getApplied<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/actors/styles.js:447:5
+TaskImpl.prototype._run@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:311:39
+TaskImpl@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:273:3
+createAsyncFunction/asyncFunction@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/task.js:247:14
+generateRequestHandlers/</handler@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/protocol.js:1044:19
+onPacket@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/server/main.js:1707:15
+ChildDebuggerTransport.prototype.receiveMessage@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/transport/transport.js:752:7
+console.error: 
+  Protocol error (unknownError): A parameter or an operation is not supported by the underlying object
+console.error: 
+  Protocol error (unknownError): A parameter or an operation is not supported by the underlying object
+console.error: 
+  Protocol error (unknownError): A parameter or an operation is not supported by the underlying object
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+1482958590287	geckodriver	INFO	Listening on 127.0.0.1:59873
+1482958591241	mozprofile::profile	INFO	Using profile path /var/folders/f_/8pmnbd_97gq3pwggbf8sv78h0000gn/T/rust_mozprofile.OyU56Opc7hcM
+1482958591243	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1482958591247	geckodriver::marionette	INFO	Connecting to Marionette on localhost:59882
+1482958591722	Marionette	INFO	Listening on port 59882
+1482958630093	geckodriver	INFO	Listening on 127.0.0.1:59987
+1482958631052	mozprofile::profile	INFO	Using profile path /var/folders/f_/8pmnbd_97gq3pwggbf8sv78h0000gn/T/rust_mozprofile.QAMHAN9GRlaf
+1482958631053	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1482958631057	geckodriver::marionette	INFO	Connecting to Marionette on localhost:59996
+1482958631547	Marionette	INFO	Listening on port 59996
+Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1551"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1551:5
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+NetworkResponseListener.prototype._onComplete@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:641:5
+NetworkResponseListener.prototype.onStreamClose@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:590:7
+NetworkResponseListener.prototype.onInputStreamReady@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:691:7
+Line: 1551, column: 0
+console.error: 
+  Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1551"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1551:5
+exports.makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:101:14
+NetworkResponseListener.prototype._onComplete@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:641:5
+NetworkResponseListener.prototype.onStreamClose@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:590:7
+NetworkResponseListener.prototype.onInputStreamReady@resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js:691:7
+Line: 1551, column: 0
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4A011A,name=PContent::Msg_AsyncMessage) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: chrome://global/content/process-content.js, line 51: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIMessageSender.sendAsyncMessage]
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4A011A,name=PContent::Msg_AsyncMessage) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: chrome://global/content/process-content.js, line 51: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIMessageSender.sendAsyncMessage]
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2E0045,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4A00C3,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4A00C3,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4A00C3,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4A00C3,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][OnMaybeDequeueOne] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][OnMaybeDequeueOne] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4A00C2,name=PContent::Msg_ConsoleMessage) Channel closing: too late to send/recv, messages will be lost
+
+[Child 5008] ###!!! ABORT: Aborting on channel error.: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+[Child 5008] ###!!! ABORT: Aborting on channel error.: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+1482958642469	geckodriver	INFO	Listening on 127.0.0.1:60028
+1482958643425	mozprofile::profile	INFO	Using profile path /var/folders/f_/8pmnbd_97gq3pwggbf8sv78h0000gn/T/rust_mozprofile.8PdyEsoKGNWZ
+1482958643426	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1482958643431	geckodriver::marionette	INFO	Connecting to Marionette on localhost:60037
+1482958643921	Marionette	INFO	Listening on port 60037
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+1482958661543	geckodriver	INFO	Listening on 127.0.0.1:60103
+1482958662497	mozprofile::profile	INFO	Using profile path /var/folders/f_/8pmnbd_97gq3pwggbf8sv78h0000gn/T/rust_mozprofile.T2uyJb7myYhy
+1482958662499	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1482958662502	geckodriver::marionette	INFO	Connecting to Marionette on localhost:60112
+1482958662992	Marionette	INFO	Listening on port 60112
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yL/r/a0CWlQBXRtC.js, line 15: unreachable code after return statement
+JavaScript error: resource://app/modules/UITour.jsm, line 691: TypeError: window is null
+JavaScript error: resource://app/modules/UITour.jsm, line 691: TypeError: window is null
+JavaScript error: resource://app/modules/UITour.jsm, line 691: TypeError: window is null

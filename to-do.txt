@@ -1,0 +1,26 @@
+1. Dump the top youtube channels list into json file
+2. Parse the file in scrape_facebook - figure out how many verified customers you are getting
+3. Start NLP for video title
+
+
+# url = "https://graph.facebook.com/v2.8/10154804184463896/video_insights/total_video_views_unique&access_token="+access_token
+# print(requests.get(url).json())
+
+url = "http://vidstatsx.com/youtube-top-200-most-subscribed-channels"
+req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+page = html.fromstring(urlopen(req).read())
+el = page.xpath("//a[@class='user']")
+
+from urllib.request import Request, urlopen
+from lxml import html
+import requests, json
+from urllib.request import Request, urlopen
+from lxml import html
+import requests, json
+
+
+url = "https://www.facebook.com/AllTrapNation/videos/1174676259234742"
+req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+page = html.fromstring(urlopen(req).read())
+el = page.xpath("*//span[@class='fcg']")
+

@@ -1,10 +1,15 @@
-from urllib import *
-from lxml import html
+# fga module - FacebookGoogleAggregator - Aggregates the top 200 youtube channels
+# with their corresponding facebook pages
+
 import requests, json
+
+from lxml import html
+from urllib import *
 from urllib.request import Request, urlopen
+
 import facebook
 
-class FacebookGoogleAggregator():
+class fga():
 	# API DETAILS
 	APP_ID = "1254942267860327"
 	API_KEY = "b41369a7ec1e753a7274e752afc8b9a4"
@@ -14,7 +19,7 @@ class FacebookGoogleAggregator():
 			if(each['is_verified']):
 				return each['id']
 
-	def getYouTubeDetails(self):
+	def get_youtube_detail(self):
 		
 		# Source of the top youtube channels - vistatsx.com
 		# url = "http://vidstatsx.com/youtube-top-100-most-subscribed-channels"
@@ -29,7 +34,7 @@ class FacebookGoogleAggregator():
 				youtube_channel_details[each.text] = each.attrib["href"].replace("/youtube-channel", "")
 		return youtube_channel_details
 
-	def getFacebookFromTopYouTubeChannels(self, youtube_channel_details):
+	def get_facebook_youtube_from_youtube(self, youtube_channel_details):
 		
 		# Get Authentication access to facebook's graph API
 		url = "https://graph.facebook.com/oauth/access_token?grant_type=client_credentials&read_insights&client_id="+self.APP_ID+"&client_secret="+self.API_KEY
@@ -48,15 +53,17 @@ class FacebookGoogleAggregator():
 		
 		return all_channels_details
 
-	def getFirstLevelData(self):
-		youtube_channel_details = self.getYouTubeDetails()
-		print(self.getFacebookFromTopYouTubeChannels(youtube_channel_details))
-
-
-a = FacebookGoogleAggregator()
-a.getFirstLevelData()
+	def get_first_level_data(self):
+		youtube_channel_details = self.get_youtube_detail()
+		print(self.get_facebook_youtube_from_youtube(youtube_channel_details))
 
 
 
-# url = "https://graph.facebook.com/v2.8/10154804184463896/video_insights/total_video_views_unique&access_token="+access_token
-# print(requests.get(url).json())
+a = fga()
+url = "https://graph.facebook.com/oauth/access_token?grant_type=client_credentials&read_insights&video_insights&client_id="+a.APP_ID+"&client_secret="+a.API_KEY
+access_token = requests.get(url).text.replace("access_token=", "")
+
+url = "https://graph.facebook.com/v2.8/10154804184463896/video_insights/total_video_views_unique&access_token="+access_token
+print(url)
+print(requests.get(url).json())
+
