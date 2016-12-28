@@ -55,15 +55,38 @@ class fga():
 
 	def get_first_level_data(self):
 		youtube_channel_details = self.get_youtube_detail()
-		print(self.get_facebook_youtube_from_youtube(youtube_channel_details))
+		all_valid_channels = self.get_facebook_youtube_from_youtube(youtube_channel_details)
 
+		with open('channel_detail.json', 'w') as fp:
+			json.dump(all_valid_channels, fp)
 
+		return all_valid_channels
 
-a = fga()
-url = "https://graph.facebook.com/oauth/access_token?grant_type=client_credentials&read_insights&video_insights&client_id="+a.APP_ID+"&client_secret="+a.API_KEY
-access_token = requests.get(url).text.replace("access_token=", "")
+	def get_facebook_video_titles(self):
+		url = "https://graph.facebook.com/oauth/access_token?grant_type=client_credentials&read_insights&client_id="+self.APP_ID+"&client_secret="+self.API_KEY
+		access_token = requests.get(url).text.replace("access_token=", "")
 
-url = "https://graph.facebook.com/v2.8/10154804184463896/video_insights/total_video_views_unique&access_token="+access_token
-print(url)
-print(requests.get(url).json())
+		r_url = "https://graph.facebook.com/v2.8/FallonTonight/videos&access_token="+access_token
+		with open("channel_detail.json") as data_file:
+			all_channels = json.load(data_file)
+
+		all_facebook_videos = {}
+		for key, value in all_channels.items():
+			r_url = "https://graph.facebook.com/v2.8/"+value[0]+"/videos?access_token="+access_token
+			videos = requests.get(r_url).json()
+			results = videos['data']
+			
+			all_facebook_videos[key] = []
+
+			for each in results:
+				try:
+					all_facebook_videos[key].append({each["description"] : each["id"]})
+				except KeyError as e:
+					pass
+		
+		with open("facbeook_video_title_id.json", "w") as fvti:
+			json.dump(all_facebook_videos, fvti)
+
+		
+
 
