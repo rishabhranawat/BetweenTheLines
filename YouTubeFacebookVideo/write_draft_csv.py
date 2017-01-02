@@ -2,10 +2,10 @@ import sys
 import csv
 import json
 
-with open("draft.json") as fp:
+with open("draft2.json") as fp:
 	data = json.load(fp)
 
-with open("draft.csv", "w") as f:
+with open("draft2.csv", "w") as f:
 	writer = csv.writer(f)
 
 	for key, value in data.items():
