@@ -10,4 +10,4 @@ with open("draft2.csv", "w") as f:
 
 	for key, value in data.items():
 		for title, views in value.items():
-			writer.writerow([key.encode('utf-8'), title.encode('utf-8'), views["google"].encode('utf-8'), views["fb"].encode('utf-8')])
+			writer.writerow([key, title, views["google"], views["fb"]])
