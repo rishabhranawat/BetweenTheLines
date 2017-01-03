@@ -43,3 +43,7 @@ with open('youtube_channels.json', 'w') as fp:
 
 
 
+
+
+				print("commentCount "+details['items'][0]['statistics']['commentCount'])
+				print("likeCount "+details['items'][0]['statistics']['likeCount'])
