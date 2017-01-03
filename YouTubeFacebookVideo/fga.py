@@ -23,7 +23,7 @@ class fga():
 		
 		# Source of the top youtube channels - vistatsx.com
 		# url = "http://vidstatsx.com/youtube-top-100-most-subscribed-channels"
-		url = "http://vidstatsx.com/youtube-top-200-most-subscribed-channels"
+		url = "http://vidstatsx.com/youtube-top-500-most-subscribed-channels"
 		req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
 		page = html.fromstring(urlopen(req).read())
 		el = page.xpath("//a[@class='user']")
@@ -72,7 +72,7 @@ class fga():
 
 		all_facebook_videos = {}
 		for key, value in all_channels.items():
-			r_url = "https://graph.facebook.com/v2.8/"+value[0]+"/videos?access_token="+access_token
+			r_url = "https://graph.facebook.com/v2.8/"+value[0]+"/videos?fields=title,description&access_token="+access_token
 			videos = requests.get(r_url).json()
 			results = videos['data']
 			
@@ -80,13 +80,20 @@ class fga():
 
 			for each in results:
 				try:
-					all_facebook_videos[key].append({each["description"] : each["id"]})
+					print(each)
+					title_val = each["title"]
+					if(title_val == "" or title_val == None):
+						all_facebook_videos[key].append({each["description"] : each["id"]})
+					else:
+						all_facebook_videos[key].append({each["title"] : each["id"]})
 				except KeyError as e:
 					pass
 		
 		with open("facbeook_video_title_id.json", "w") as fvti:
 			json.dump(all_facebook_videos, fvti)
 
-		
+a = fga()
+a.get_first_level_data()
+a.get_facebook_video_titles()	
 
 
