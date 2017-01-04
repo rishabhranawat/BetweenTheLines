@@ -32,6 +32,16 @@ class fga():
 		for each in el:
 			if(each.text[0] != "#"):
 				youtube_channel_details[each.text] = each.attrib["href"].replace("/youtube-channel", "")
+
+		url = "http://vidstatsx.com/youtube-top-200-most-subscribed-channels"
+		req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+		page = html.fromstring(urlopen(req).read())
+		el = page.xpath("//a[@class='user']")
+
+		for each in el:
+			if(each.text[0] != "#"):
+				youtube_channel_details[each.text] = each.attrib["href"].replace("/youtube-channel", "")
+
 		return youtube_channel_details
 
 	def get_facebook_youtube_from_youtube(self, youtube_channel_details):
@@ -80,13 +90,13 @@ class fga():
 
 			for each in results:
 				try:
-					print(each)
 					title_val = each["title"]
 					if(title_val == "" or title_val == None):
 						all_facebook_videos[key].append({each["description"] : each["id"]})
 					else:
 						all_facebook_videos[key].append({each["title"] : each["id"]})
 				except KeyError as e:
+					print(e)
 					pass
 		
 		with open("facbeook_video_title_id.json", "w") as fvti:

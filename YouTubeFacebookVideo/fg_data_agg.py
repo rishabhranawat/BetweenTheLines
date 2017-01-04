@@ -3,9 +3,7 @@
 # Outputs a separate file with the youtube names
 
 import requests, json
-from urllib.request import Request, urlopen
 from lxml import html
-from fga import fga as fga
 from fuzzywuzzy import fuzz
 import sys
 import csv
@@ -44,56 +42,64 @@ class fgda():
 
 		data = {}
 		vals = self.valid_channels
+		count = 0
 
-		for key, val in vals.items():
-			try:
-				name = val[1]
-				url = "https://www.googleapis.com/youtube/v3/channels?part=contentDetails&forUsername="+name.replace("/", "")+"&key=AIzaSyBxuVNgsVOm3GVeIsyrYK1KvyKyWFXY2q8"
-				channel_data = json.loads(requests.get(url).text)
-				uploads_id = channel_data['items'][0]['contentDetails']['relatedPlaylists']['uploads']
-				k_url = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId="+uploads_id+"&key=AIzaSyBxuVNgsVOm3GVeIsyrYK1KvyKyWFXY2q8"
-				videos_data = json.loads(requests.get(k_url).text)
-				items = videos_data['items']
+		with open("trial_3.csv", "w") as f:
+			writer = csv.writer(f)
+			for key, val in vals.items():
+				try:
+					name = val[1]
+					url = "https://www.googleapis.com/youtube/v3/channels?part=contentDetails&forUsername="+name.replace("/", "")+"&key=AIzaSyBxuVNgsVOm3GVeIsyrYK1KvyKyWFXY2q8"
+					channel_data = json.loads(requests.get(url).text)
+					uploads_id = channel_data['items'][0]['contentDetails']['relatedPlaylists']['uploads']
+					k_url = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=10&playlistId="+uploads_id+"&key=AIzaSyBxuVNgsVOm3GVeIsyrYK1KvyKyWFXY2q8"
+					videos_data = json.loads(requests.get(k_url).text)
+					items = videos_data['items']
 
-				# Get all the youtube video details
-				for each in items:
-					video_id = each['snippet']['resourceId']['videoId']
-					v_url = "https://www.googleapis.com/youtube/v3/videos?part=statistics&id="+video_id+"&key=AIzaSyBxuVNgsVOm3GVeIsyrYK1KvyKyWFXY2q8"
-					details = json.loads(requests.get(v_url).text)
-					title = each['snippet']['title']
-					google_view_count = details['items'][0]['statistics']['viewCount']
+					# Get all the youtube video details
+					for each in items:
+						video_id = each['snippet']['resourceId']['videoId']
+						v_url = "https://www.googleapis.com/youtube/v3/videos?part=statistics&id="+video_id+"&key=AIzaSyBxuVNgsVOm3GVeIsyrYK1KvyKyWFXY2q8"
+						details = json.loads(requests.get(v_url).text)
+						title = each['snippet']['title']
+						google_view_count = details['items'][0]['statistics']['viewCount']
 
-					max_rat = -1
-					max_title = None
-					max_id = None
-					
-					# Get 
-					fb_vids = self.facebook_videos[key]
-					
-					# Get the particular channel in the final data dict
-					try: a = data[key] 
-					except: data[key] = {}
+						max_rat = -1
+						max_title = None
+						max_id = None
+						
+						# Get 
+						fb_vids = self.facebook_videos[key]
+						
+						# Get the particular channel in the final data dict
+						try: a = data[key] 
+						except: data[key] = {}
 
-					# Get the video that matches max
-					for vids in fb_vids:
-						for fb_title, value in vids.items():
-							title_rat = fuzz.ratio(fb_title, title)
-							if(title_rat > max_rat):
-								max_rat = title_rat
-								max_title = fb_title
-								max_id = value
+						# Get the video that matches max
+						for vids in fb_vids:
+							for fb_title, value in vids.items():
+								title_rat = fuzz.ratio(fb_title, title)
+								if(title_rat > max_rat):
+									max_rat = title_rat
+									max_title = fb_title
+									max_id = value
 
-					if(max_rat > 90):
-						print(max_title, title)
-						url = "https://www.facebook.com/"+val[0]+"/videos/"+max_id
-						driver.get(url)
-						try:
-							facebook_view_count = driver.find_element_by_class_name("_1t6k").text
-							data[key][title] = {"fb": facebook_view_count, "google": google_view_count}
-						except: pass
-			except: pass
+						if(max_rat > 90):
+							count += 1
+							print(max_title, title, count)
+							url = "https://www.facebook.com/"+val[0]+"/videos/"+max_id
+							driver.get(url)
+							try:
+								facebook_view_count = driver.find_element_by_class_name("_1t6k").text
+								data[key][title] = {"fb": facebook_view_count, "google": google_view_count}
+								writer.writerow([key, title, google_view_count, facebook_view_count])
+							except:
+								print("Unexpected Error")
+								pass
+				except:
+					print("Unexpected Error 2")
+					pass
 		return data
-
 
 fgda = fgda()
 fgda.get_valid_channels()
@@ -108,7 +114,7 @@ with open('comparison_data.json', 'w') as fp:
 with open("comparison_data.json") as fp:
 	all_data = json.load(fp)
 
-with open("trial_3.csv", "w") as f:
+with open("trial_4.csv", "w") as f:
 	writer = csv.writer(f)
 
 	for key, value in all_data.items():
