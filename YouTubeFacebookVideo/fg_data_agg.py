@@ -44,7 +44,7 @@ class fgda():
 		vals = self.valid_channels
 		count = 0
 
-		with open("trial_3.csv", "w") as f:
+		with open("trial_all_youtube_fb.csv", "w") as f:
 			writer = csv.writer(f)
 			for key, val in vals.items():
 				try:
@@ -94,10 +94,18 @@ class fgda():
 								data[key][title] = {"fb": facebook_view_count, "google": google_view_count}
 								writer.writerow([key, title, google_view_count, facebook_view_count])
 							except:
-								print("Unexpected Error")
+								print("Unexpected Error 1")
+								pass
+						else:
+							count += 1
+							try:
+								data[key][title] = {"fb": 0, "google": google_view_count}
+								writer.writerow([key, title, google_view_count, 0])
+							except:
+								print("Unexpected Error 2")
 								pass
 				except:
-					print("Unexpected Error 2")
+					print("Unexpected Error 3")
 					pass
 		return data
 
