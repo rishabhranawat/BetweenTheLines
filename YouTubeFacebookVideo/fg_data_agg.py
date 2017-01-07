@@ -169,19 +169,24 @@ class fgda():
 
 					url = "https://www.facebook.com/"+val[0]+"/videos/"+value
 					driver.get(url)
-					facebook_view_count = driver.find_element_by_class_name("_1t6k").text
-					count += 1
+
 					try:
-						if(max_rat > 90):
-							print(fb_title, max_title, facebook_view_count, google_view_count, count)
-							data[key][fb_title] = {"fb": facebook_view_count, "google": google_view_count}
-							writer.writerow([key, fb_title, max_count, facebook_view_count])
-						else:
-							print(max_title, fb_title, facebook_view_count, 0, count)
-							data[key][fb_title] = {"fb": facebook_view_count, "google": 0}
-							writer.writerow([key, fb_title, 0, facebook_view_count])
+						facebook_view_count = driver.find_element_by_class_name("_1t6k").text
+						count += 1
+						try:
+							if(max_rat > 90):
+								print(fb_title, max_title, facebook_view_count, google_view_count, count)
+								data[key][fb_title] = {"fb": facebook_view_count, "google": google_view_count}
+								writer.writerow([key, fb_title, max_count, facebook_view_count])
+							else:
+								print(max_title, fb_title, facebook_view_count, 0, count)
+								data[key][fb_title] = {"fb": facebook_view_count, "google": 0}
+								writer.writerow([key, fb_title, 0, facebook_view_count])
+						except:
+							print("Unexpected Error 1")
+							pass
 					except:
-						print("Unexpected Error 1")
+						print("Unexpected Error 2")
 						pass
 
 
