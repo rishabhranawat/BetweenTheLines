@@ -102,8 +102,62 @@ class fga():
 		with open("facbeook_video_title_id.json", "w") as fvti:
 			json.dump(all_facebook_videos, fvti)
 
+	def get_facebook_to_google_video_titles(self):
+		url = "https://graph.facebook.com/oauth/access_token?grant_type=client_credentials&read_insights&client_id="+self.APP_ID+"&client_secret="+self.API_KEY
+		access_token = requests.get(url).text.replace("access_token=", "")
+
+		r_url = "https://graph.facebook.com/v2.8/FallonTonight/videos&access_token="+access_token
+		with open("channel_detail.json") as data_file:
+			all_channels = json.load(data_file)
+
+		all_facebook_videos = {}
+		for key, value in all_channels.items():
+			r_url = "https://graph.facebook.com/v2.8/"+value[0]+"/videos?limit=10&fields=title,description&access_token="+access_token
+			videos = requests.get(r_url).json()
+			results = videos['data']
+			
+			all_facebook_videos[key] = []
+
+			for each in results:
+				try:
+					title_val = each["title"]
+					if(title_val == "" or title_val == None):
+						all_facebook_videos[key].append({each["description"] : each["id"]})
+					else:
+						all_facebook_videos[key].append({each["title"] : each["id"]})
+				except KeyError as e:
+					pass
+		
+		with open("facebook_to_google_fb_vids.json", "w") as fvti:
+			json.dump(all_facebook_videos, fvti)
+
+	def get_google_videos(self):
+		with open("channel_detail.json") as data_file:
+			all_channels = json.load(data_file)
+		
+		vals = all_channels
+		all_vids = {}
+
+		for key, val in vals.items():
+				
+				# Get all google videos
+			try:
+				name = val[1]
+				url = "https://www.googleapis.com/youtube/v3/channels?part=contentDetails&forUsername="+name.replace("/", "")+"&key=AIzaSyBxuVNgsVOm3GVeIsyrYK1KvyKyWFXY2q8"
+				channel_data = json.loads(requests.get(url).text)
+				uploads_id = channel_data['items'][0]['contentDetails']['relatedPlaylists']['uploads']
+				k_url = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId="+uploads_id+"&key=AIzaSyBxuVNgsVOm3GVeIsyrYK1KvyKyWFXY2q8"
+				videos_data = json.loads(requests.get(k_url).text)
+				items = videos_data['items']
+				all_vids[key] = items
+			except:
+				all_vids[key] = []
+
+		with open("google_video_lists.json", "w") as fv:
+			json.dump(all_vids, fv)
+
 a = fga()
-a.get_first_level_data()
-a.get_facebook_video_titles()	
-
-
+# a.get_first_level_data()
+# a.get_facebook_video_titles()	
+# a.get_facebook_to_google_video_titles()
+a.get_google_videos()
