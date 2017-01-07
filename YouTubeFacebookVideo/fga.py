@@ -146,14 +146,14 @@ class fga():
 				url = "https://www.googleapis.com/youtube/v3/channels?part=contentDetails&forUsername="+name.replace("/", "")+"&key=AIzaSyBxuVNgsVOm3GVeIsyrYK1KvyKyWFXY2q8"
 				channel_data = json.loads(requests.get(url).text)
 				uploads_id = channel_data['items'][0]['contentDetails']['relatedPlaylists']['uploads']
-				k_url = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId="+uploads_id+"&key=AIzaSyBxuVNgsVOm3GVeIsyrYK1KvyKyWFXY2q8"
+				k_url = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=10&playlistId="+uploads_id+"&key=AIzaSyBxuVNgsVOm3GVeIsyrYK1KvyKyWFXY2q8"
 				videos_data = json.loads(requests.get(k_url).text)
 				items = videos_data['items']
 				all_vids[key] = items
 			except:
 				all_vids[key] = []
 
-		with open("google_video_lists.json", "w") as fv:
+		with open("google_video_lists_10.json", "w") as fv:
 			json.dump(all_vids, fv)
 
 a = fga()

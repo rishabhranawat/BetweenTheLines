@@ -126,7 +126,7 @@ class fgda():
 		with open("facebook_to_google_fb_vids.json") as fv:
 			facebook_videos = json.load(fv)
 
-		with open("google_video_lists.json") as fv1:
+		with open("google_video_lists_10.json") as fv1:
 			google_videos = json.load(fv1)
 
 
