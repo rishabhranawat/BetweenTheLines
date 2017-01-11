@@ -70,10 +70,6 @@ class fgda():
 						
 						# Get 
 						fb_vids = self.facebook_videos[key]
-						
-						# Get the particular channel in the final data dict
-						try: a = data[key] 
-						except: data[key] = {}
 
 						# Get the video that matches max
 						for vids in fb_vids:
@@ -91,7 +87,6 @@ class fgda():
 							driver.get(url)
 							try:
 								facebook_view_count = driver.find_element_by_class_name("_1t6k").text
-								data[key][title] = {"fb": facebook_view_count, "google": google_view_count}
 								writer.writerow([key, title, google_view_count, facebook_view_count])
 							except:
 								print("Unexpected Error 1")
@@ -99,7 +94,6 @@ class fgda():
 						else:
 							count += 1
 							try:
-								data[key][title] = {"fb": 0, "google": google_view_count}
 								writer.writerow([key, title, google_view_count, 0])
 							except:
 								print("Unexpected Error 2")
@@ -107,7 +101,6 @@ class fgda():
 				except:
 					print("Unexpected Error 3")
 					pass
-		return data
 
 	def get_facebook_to_google_data(self):
 
