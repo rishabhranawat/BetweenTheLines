@@ -20,18 +20,15 @@ def get_google_videos():
 		vals = json.load(f)
 	all_vids = {}
 	for key, val in vals.items():
-		try:
-			name = val[1]
-			url = "https://www.googleapis.com/youtube/v3/channels?part=contentDetails&forUsername="+name.replace("/", "")+"&key=AIzaSyBxuVNgsVOm3GVeIsyrYK1KvyKyWFXY2q8"
-			channel_data = json.loads(requests.get(url).text)
-			uploads_id = channel_data['items'][0]['contentDetails']['relatedPlaylists']['uploads']
-			k_url = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId="+uploads_id+"&key=AIzaSyBxuVNgsVOm3GVeIsyrYK1KvyKyWFXY2q8"
-			videos_data = json.loads(requests.get(k_url).text)
-			items = videos_data['items']
-			all_vids[key] = items
-		except:
-			all_vids[key] = []
-
+		name = val[1]
+		url = "https://www.googleapis.com/youtube/v3/channels?part=contentDetails&forUsername="+name.replace("/", "")+"&key=AIzaSyBxuVNgsVOm3GVeIsyrYK1KvyKyWFXY2q8"
+		channel_data = json.loads(requests.get(url).text)
+		uploads_id = channel_data['items'][0]['contentDetails']['relatedPlaylists']['uploads']
+		k_url = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId="+uploads_id+"&key=AIzaSyBxuVNgsVOm3GVeIsyrYK1KvyKyWFXY2q8"
+		videos_data = json.loads(requests.get(k_url).text)
+		items = videos_data['items']
+		all_vids[key] = items
+		
 	with open("deeper_dive_google_videos.json", "w") as f:
 		json.dump(all_vids, f)
 
@@ -115,46 +112,44 @@ def get_youtube_to_facebook():
 
 	with open("deeper_dive_youtube_to_facebook.csv", "w") as dd:
 		writer = csv.writer(dd)
-		try:
-			for key, value in google_videos.items():
-				page_videos = facebook_videos[key]
-				channel_videos = value
+		for key, value in google_videos.items():
+			page_videos = facebook_videos[key]
+			channel_videos = value
 
-				for youtube_video in channel_videos:
-					youtube_title, youtube_view_count = get_youtube_count(youtube_video)
-					youtube_duration = get_youtube_duration(youtube_video)
+			for youtube_video in channel_videos:
+				youtube_title, youtube_view_count = get_youtube_count(youtube_video)
+				youtube_duration = get_youtube_duration(youtube_video)
 
-					max_rat = -1
-					max_title = None
-					max_id = None
-					max_len = None
+				max_rat = -1
+				max_title = None
+				max_id = None
+				max_len = None
 
-					for facebook_video in page_videos:
-						for facebook_title, facebook_details in facebook_video.items():
-							title_rat = fuzz.ratio(facebook_title, youtube_title)
-							if(title_rat > max_rat):
-								max_rat = title_rat
-								max_title = facebook_title
-								max_id = facebook_details[0]
-								max_len = facebook_details[1]
-					if(max_rat > 90):
-						print(youtube_title, max_title)
-						count += 1
-						url = "https://www.facebook.com/"+all_channels[key][0]+"/videos/"+max_id
-						driver.get(url)
-						try:
-							facebook_view_count = driver.find_element_by_class_name("_1t6k").text
-							writer.writerow([key, youtube_title, youtube_view_count, youtube_duration, facebook_view_count, max_len])
-						except:
-							print("Unexpected error 1")
-					else:
-						count += 1
-						try:
-							writer.writerow([key, youtube_title, youtube_view_count, youtube_duration, 0, 0])
-						except:
-							print("Unexpected Error 2")
-		except:
-			print("Unexpected Error 3")
+				for facebook_video in page_videos:
+					for facebook_title, facebook_details in facebook_video.items():
+						title_rat = fuzz.ratio(facebook_title, youtube_title)
+						if(title_rat > max_rat):
+							max_rat = title_rat
+							max_title = facebook_title
+							max_id = facebook_details[0]
+							max_len = facebook_details[1]
+				if(max_rat > 90):
+					print(youtube_title, max_title)
+					count += 1
+					url = "https://www.facebook.com/"+all_channels[key][0]+"/videos/"+max_id
+					driver.get(url)
+					try:
+						facebook_view_count = driver.find_element_by_class_name("_1t6k").text
+						writer.writerow([key, youtube_title, youtube_view_count, youtube_duration, facebook_view_count, max_len])
+					except:
+						print("Unexpected error 1")
+				else:
+					count += 1
+					try:
+						writer.writerow([key, youtube_title, youtube_view_count, youtube_duration, 0, 0])
+					except:
+						print("Unexpected Error 2")
+		
 
 
 
