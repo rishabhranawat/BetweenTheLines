@@ -107,9 +107,6 @@ def get_youtube_to_facebook():
 	with open("deeper_dive_google_videos.json") as f:
 		google_videos = json.load(f)
 
-	youtube_to_facebook_data = {}
-	count = 0
-
 	with open("deeper_dive_youtube_to_facebook.csv", "w") as dd:
 		writer = csv.writer(dd)
 		for key, value in google_videos.items():
@@ -135,7 +132,6 @@ def get_youtube_to_facebook():
 							max_len = facebook_details[1]
 				if(max_rat > 90):
 					print(youtube_title, max_title)
-					count += 1
 					url = "https://www.facebook.com/"+all_channels[key][0]+"/videos/"+max_id
 					driver.get(url)
 					try:
@@ -144,16 +140,76 @@ def get_youtube_to_facebook():
 					except:
 						print("Unexpected error 1")
 				else:
-					count += 1
 					try:
 						writer.writerow([key, youtube_title, youtube_view_count, youtube_duration, 0, 0])
 					except:
 						print("Unexpected Error 2")
 		
 
+def get_facebook_to_youtube():
+	driver = webdriver.Firefox()
+	driver.get("https://www.facebook.com")
 
+	email = driver.find_element_by_id("email")
+	email.send_keys("rishabhranawat@yahoo.com")
 
-get_youtube_to_facebook()
+	password = driver.find_element_by_id("pass")
+	password.send_keys("zinnialondon!!")
+
+	button = driver.find_element_by_id("loginbutton")
+	button.click()
+
+	with open("deep_dive_users.json") as f:
+		all_channels = json.load(f)
+	
+	with open("deeper_dive_facebook_videos.json") as f:
+		facebook_videos = json.load(f)
+
+	with open("deeper_dive_google_videos.json") as f:
+		google_videos = json.load(f)
+
+	with open("deeper_dive_facebook_to_youtube.csv", "w") as dd:
+		writer = csv.writer(dd)
+		for popular_name, youtube_facebook in all_channels.items():
+
+			facebook_id = youtube_facebook[0]
+			youtube_id = youtube_facebook[1]
+
+			page_videos = facebook_videos[popular_name]
+			channel_videos = google_videos[popular_name]
+
+			for facebook_video in page_videos:
+				for facebook_title, facebook_details in facebook_video.items():
+					facebook_length = facebook_details[1]
+
+					max_rat = -1
+					max_title = None
+					max_video = None
+
+					for youtube_video in channel_videos:
+						youtube_title = youtube_video['snippet']['title']
+						title_rat = fuzz.ratio(youtube_title, facebook_title)
+						if(title_rat > max_rat):
+							max_rat = title_rat
+							max_title = youtube_title
+							max_video = youtube_video
+				
+				url = "https://www.facebook.com/"+facebook_id+"/videos/"+facebook_details[0]
+				driver.get(url)
+
+				try:
+					facebook_view_count = driver.find_element_by_class_name("_1t6k").text
+					if(max_rat > 90):
+						youtube_title, youtube_view_count = get_youtube_count(max_video)
+						print(youtube_title, facebook_title)
+						youtube_duration = get_youtube_duration(max_video)
+						writer.writerow([popular_name, facebook_title, youtube_view_count, youtube_duration, facebook_view_count, facebook_length])
+					else:
+						writer.writerow([popular_name, facebook_title, 0, 0, facebook_view_count, facebook_length])
+				except:
+					print("Unexpected Error 4")
+
+get_facebook_to_youtube()
 # get_google_videos()
 
 
