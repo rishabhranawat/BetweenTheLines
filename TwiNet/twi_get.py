@@ -7,3 +7,4 @@ api = tweepy.API(auth)
 
 statuses = api.user_timeline('realDonaldTrump', count = 200)
 print(statuses[0].text)
+
