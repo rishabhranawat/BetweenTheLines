@@ -58,5 +58,5 @@ pp = pprint.PrettyPrinter(indent=4)
 pp.pprint(heads)
 
 
-with open("heads_of_states_94.json", "w") as f:
+with open("heads_of_states_100.json", "w") as f:
 	json.dump(heads, f)
