@@ -16,15 +16,15 @@ def get_state(location):
 
 	return None
 
-with open("resist_1000.json") as f:
+with open("fake_tears_1000.json") as f:
 	bs = json.load(f)
 
-gmaps = googlemaps.Client(key='AIzaSyAID1o6hSjBt4ucm-f1WLXyAeV5vK0SNPk')
+gmaps = googlemaps.Client(key='AIzaSyCJVCyHUz8w14lfuMLcHMTIbbCdZmQErf8')
 
 bsr = {}
 count = 0
 
-with open("resist.json", "w") as fp:
+with open("fake_tears.json", "w") as fp:
 	for tweet, address in bs.items():
 		count += 1
 		location = gmaps.geocode(address)
