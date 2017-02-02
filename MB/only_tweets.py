@@ -11,7 +11,7 @@ auth.set_access_token("3530340917-urj3UuRWL6frj2FtdhQjj6v0PpVF0PoJy6hp6og",
 api = tweepy.API(auth)
 
 # Getting the first batch
-batch = api.search("#FakeTears", count=100)
+batch = api.search("#BoycottStarbucks", count=100)
 oldest = batch[-1].id-1
 
 tweets = {}
@@ -19,23 +19,16 @@ count = 0
 
 # Open the json file and keep adding the tweets
 try:
-	with open("resist_tweets_2.json", "w") as f:
-		while(len(batch) > 0):
+	with open("boycott_starbucks_1000.json", "w") as f:
+		while(count < 1000):
 			for tweet in batch:
 				count += 1
 				print(count)
 				address = tweet.user.location
 				text = tweet.text
 				if(address): tweets[text] = address
-			try:
-				batch = api.search("#FakeTears", count=100, max_id=oldest)
-			except Exception as e:
-				print(e)
-				json.dump(tweets, f)
-				time.sleep(900)
-				batch = api.search("#FakeTears", count=100, max_id=oldest)
+			batch = api.search("#BoycottStarbucks", count=100, max_id=oldest)
 			oldest = batch[-1].id-1
+		json.dump(tweets, f)
 except Exception as e:
 	json.dump(tweets, f)
-			
-
