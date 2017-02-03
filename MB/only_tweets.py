@@ -2,7 +2,28 @@ import tweepy
 import json
 import pprint
 import time
+import pickle
 
+import googlemaps
+
+auth = tweepy.OAuthHandler("zIapCtcYvVdzCMaocAuCc3L4Y",
+	"PgBlMAU5JSsd7cQyYFlHgwjtQesFmRH5KbSZLPIw5861WRGNoT")
+auth.set_access_token("826903475262980098-PSEGqBRhHUhQ95ZfrigieWZoyTwDRDG", 
+	"dkN4Da7RhecnOvMWd4cxQwFaSSeLFvTWsvlUPHCYJ8HQ6")
+api = tweepy.API(auth)
+
+gmaps = googlemaps.Client(key='AIzaSyCNlfqMEJEdG97-tDde8hfOUxy02z149xA')
+
+# Getting the first batch
+batch = api.search("#FakeTears", count=100)
+oldest = batch[-1].id-1
+
+with open("finalData/stateab.json") as f:
+	ab = json.load(f)
+
+all_states = []
+for each in ab:
+	all_states.append(each["name"])
 
 def get_state(location):
 	c = location[0]['address_components']
@@ -12,34 +33,35 @@ def get_state(location):
 
 	return None
 
-# Twitter authorization
-auth = tweepy.OAuthHandler("7ORmqhp1lXxpazSzpTGVVNAv6", 
-	"KXwjMsUcf0cKLIZ94D76GYwJeAhQ2qbUlxp2OnENVDQXIAz3Nh")
-auth.set_access_token("3530340917-urj3UuRWL6frj2FtdhQjj6v0PpVF0PoJy6hp6og", 
-	"eW9ZyEZID417pFtZDTLwUI95u60TCcict290qxnBIXleE")
-
-gmaps = googlemaps.Client(key='AIzaSyD4cKAyllPW6joKXP52BUlJdglliTsgTSg')
-api = tweepy.API(auth)
-
-# Getting the first batch
-batch = api.search("#FakeTears", count=100)
-oldest = batch[-1].id-1
-
-tweets = {}
+tweets = []
+data = {}
+total = 0
 collect = True
 # Open the json file and keep adding the tweets
-with open("fake_tears_1000.json", "w") as f:
-	while(collect):
-		if(!collect): break
+with open("fake_tears.json", "w") as f:
+	while(collect and len(batch) > 0):
+		if(not collect): break
 		for tweet in batch:
-			if(len(tweet) == 700):
+			if(total >= 700):
+				print("here!")
 				collect = False
 				break
-			print(len(tweets))
+			tweets.append(tweet)
 			address = tweet.user.location
-			text = tweet.text
-			if(address): tweets[text] = address
+			location = gmaps.geocode(address)
+			if(location):
+				state = get_state(location)
+				if(state and state in all_states):
+					try:
+						total += 1
+						data[state] += 1
+					except:
+						total += 1
+						data[state] = 1
+
 		batch = api.search("#FakeTears", count=100, max_id=oldest)
 		oldest = batch[-1].id-1
-
 	json.dump(tweets, f)
+
+with open("fake_tears_data", "wb") as f:
+	pickle.dump(tweets, f)

@@ -9,7 +9,7 @@
         geographyConfig: {
     		highlightBorderColor: '#bada55',
    			popupTemplate: function(geography, data) {
-   				var x = '<div class="hoverinfo">' + geography.properties.name + '<p>'+' Total Tweets:' +  data.TotalTweets + '</p>'+'<p>'+'#resist:'+data.resist+'</p>'+'<p>'+'#boycottstarbucks:'+data.boycottstarbucks+'</p>' + 
+   				var x = '<div class="hoverinfo">' + geography.properties.name + '<p>'+' Total Tweets:' +  data.TotalTweets + '</p>'+'<p>'+'#resist:'+data.resist+'</p>'+'<p>'+'#boycottstarbucks:'+data.boycottstarbucks+'</p>' + '<p>' +"#faketears: "+ data.faketears + '</p>' + '<p>' + '#deleteuber: '+data.deleteuber+'</p>'+' '
    				return x
     		},
     		highlightBorderWidth: 3

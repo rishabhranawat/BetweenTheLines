@@ -40,6 +40,6 @@ while(len(batch) > 0):
 	batch = api.search("#FakeTears", count=100, max_id=oldest)
 	oldest = batch[-1].id-1
 
-with open("resist_tweets.json", "w") as f:
+with open("fake_tears.json", "w") as f:
 	json.dump(tweets, f)
 
