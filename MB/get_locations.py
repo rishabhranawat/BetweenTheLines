@@ -14,7 +14,7 @@ def get_state(location):
 
 	return None
 
-with open("1000_boycott_starbucks.json") as f:
+with open("delete_uber_max.json") as f:
 	bs = json.load(f)
 
 
@@ -25,13 +25,13 @@ all_states = []
 for each in ab:
 	all_states.append(each["name"])
 
-gmaps = googlemaps.Client(key='AIzaSyBXTgtE1mnw5g-JvCgsCwszbjFKWDTB04E')
+gmaps = googlemaps.Client(key='AIzaSyDOVRlWChH9IbHnR1raF2sjNDvtAe24R04')
 
 bsr = {}
 count = 0
 total = 1
 
-with open("starbucks.json", "w") as fp:
+with open("uber.json", "w") as fp:
 	for tweet, address in bs.items():
 		if(total==638):
 			break
