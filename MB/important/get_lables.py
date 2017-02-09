@@ -2,7 +2,7 @@ import json
 
 final_data = {}
 states = {}
-
+labels = {}
 with open("stateab.json") as f:
 	ab = json.load(f)
 
@@ -67,12 +67,23 @@ for each in ab:
 			"left": 0,
 			"right": 0
 		}
+		labels[abr] = "Tie"
 	else:
+		left = round(((u/electoralVotes)*100+(r/electoralVotes)*100), 2)
+		right = round(((f/electoralVotes)*100+(s/electoralVotes)*100), 2)
 		states[abr] = {
 			"fillKey": winner,
-			"left": round(((u/electoralVotes)*100+(r/electoralVotes)*100), 2),
-			"right": round(((f/electoralVotes)*100+(s/electoralVotes)*100), 2)
+			"left": left,
+			"right": right
 		}
+		
+		if(left > right):
+			labels[abr] = str(left)+"%"
+		else:
+			labels[abr] = str(right)+"%"
 
-with open("map_data.json", "w") as f:
-	json.dump(states, f)
+# with open("map_data.json", "w") as f:
+# 	json.dump(states, f)
+
+with open("labels.json", "w") as f:
+	json.dump(labels, f)
