@@ -25,7 +25,8 @@ def get_500_tweets(api, screen_name):
 				ids.add(each.id)
 				tweets.append(each.text)
 		x = api.user_timeline(screen_name, count=200, max_id=old_id)
-		old_id = x[-1].id-1
+		if(len(x) > 0):
+			old_id = x[-1].id-1
 	return [tweets, old_id]
 
 final_data = {}
