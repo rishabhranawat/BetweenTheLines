@@ -36,11 +36,15 @@ for country, screen_name in handles.items():
 		location = user.location.split(",")
 		
 		# get data
+		if(country == "Netherlands"): print(head, title_head)
 		data = [screen_name, title_head, head, country]
-		data.extend(head.split(" "))
 		data.extend(location)
 
-		alias[country] = [x.lower() for x in list(set(data))]
+		data =  [x.lower() for x in list(set(data))]
+		for each in data:
+			if(len(each) < 2 or each == "eu"):
+				data.remove(each)
+		alias[country] = data
 	except:
 		print(country)
 
