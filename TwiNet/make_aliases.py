@@ -37,7 +37,9 @@ for country, screen_name in handles.items():
 		
 		# get data
 		if(country == "Netherlands"): print(head, title_head)
-		data = [screen_name, title_head, head, country]
+		last_name = head.split(" ")
+		last_name = last_name[-1]
+		data = ["@"+screen_name, screen_name, title_head, head, country, last_name]
 		data.extend(location)
 
 		data =  [x.lower() for x in list(set(data))]
