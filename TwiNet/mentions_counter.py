@@ -31,6 +31,7 @@ for country, details in nat.items():
 				if(country != c1 and v.strip() in let):
 					print(v, let)
 					mentions[country][c1] += 1
+					break
 
 with open("mention_data.json", "w") as f:
 	json.dump(mentions, f, indent=4)
