@@ -33,5 +33,5 @@ for country, details in nat.items():
 					mentions[country][c1] += 1
 
 with open("mention_data.json", "w") as f:
-	d = json.dump(mentions, f)
+	json.dump(mentions, f, indent=4)
 f.close()
