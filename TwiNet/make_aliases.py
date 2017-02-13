@@ -39,12 +39,12 @@ for country, screen_name in handles.items():
 		if(country == "Netherlands"): print(head, title_head)
 		last_name = head.split(" ")
 		last_name = last_name[-1]
-		data = ["@"+screen_name, screen_name, title_head, head, country, last_name]
+		data = ["@"+screen_name, screen_name, title_head, head, country]
 		data.extend(location)
 
 		data =  [x.lower() for x in list(set(data))]
 		for each in data:
-			if(len(each) < 2 or each == "eu"):
+			if(len(each) < 2 or each == "eu" or each == "may"):
 				data.remove(each)
 		alias[country] = data
 	except:
