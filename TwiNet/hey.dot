@@ -1,0 +1,30 @@
+strict graph  {
+	Lithuania -- 0.321329030493;
+	Lithuania -- 0.446331832125;
+	France -- 0.20531065045;
+	France -- 0.758794330254;
+	Netherlands -- 0.285722606367;
+	Netherlands -- 0.557547721329;
+	Norway -- 0.245278074119;
+	Norway -- 1.0;
+	Slovenia -- 0.43116269681;
+	Slovenia -- 0.500913059968;
+	Greece -- 0.0;
+	Greece -- 0.816055248552;
+	"United Kingdom" -- 0.577457689389;
+	"United Kingdom" -- 0.445174560752;
+	Austria -- 0.465840027137;
+	Austria -- 0.585879197812;
+	Croatia -- 0.308620889309;
+	Croatia -- 0.747545207234;
+	Sweden -- 0.42115926457;
+	Sweden -- 0.782763054603;
+	Poland -- 0.315645923285;
+	Poland -- 0.595541157581;
+	Belgium -- 0.0;
+	Belgium -- 0.934753239703;
+	Spain -- 0.381040089798;
+	Spain -- 0.59829594226;
+	Portugal -- 0.303553934971;
+	Portugal -- 0.674137149998;
+}
