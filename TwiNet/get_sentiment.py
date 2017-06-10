@@ -3,7 +3,7 @@ from alchemyapi import AlchemyAPI
 
 a = AlchemyAPI()
 
-with open("mention_tweet.json") as f:
+with open("deeper_dive/mentions_tweets_mofo_count.json") as f:
 	tweets = json.load(f)
 f.close()
 
