@@ -1,7 +1,7 @@
 appnope==0.1.0
 backports-abc==0.5
 beautifulsoup4==4.3.2
-bleach==1.5.0
+bleach==3.1.1
 bs4==0.0.1
 cssselect==0.9.1
 cycler==0.10.0
